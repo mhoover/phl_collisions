@@ -54,9 +54,9 @@ The following codebook is adapted from the [City of Philadelphia's Mayor's Offic
 |RELATION_TO_ROAD|Crash's relativity to road; 1=On roadway, 2=Shoulder, 3=Median, 4=Roadside, 5=Outside trafficway, 6=In parking lane, 7=Gore (intersection of ramp/highway), 9=Unk|num|
 |RESTRAINT_HELMET|Restraint or helmet; 0=None or NA, 1=Shoulder belt, 2=Lap belt, 3=Lap and shoulder belts, 4=Child safety seat, 5=Motorcycle helmet, 6=Bicycle helmet, 10=Safety belt (improper), 11=Child safety seat (improper), 12=Helmet (improper), 90=Unk restraint used, 99=Unk|num|
 |ROAD_CONDITION|Roadway surface; 0=Dry, 1=Wet, 2=Sand/mud/dirt/oil/gravel, 3=Snow, 4=Slush, 5=Ice, 6=Ice patches, 7=Water (standing/moving), 8=Oth, 9=Unk|num|
-|SCH_BUS_IND|School bus involved; 0=No, 1=Yes, 2=Unk|num|
-|SCH_ZONE_IND|Occur in school zone; 0=No, 1=Yes, 2=Unk|num|
-|female|Sex of individual involved; 0=Male, 1=Female, 2=Unk|num|
+|SCH_BUS_IND|School bus involved; Y=Yes, N=No, U=Unk|str|
+|SCH_ZONE_IND|Occur in school zone; Y=Yes, N=No, U=Unk|str|
+|SEX|Sex of individual involved|Str|
 |SMALL_TRUCK_COUNT|Nbr small trucks involved|num|
 |SPEED_LIMIT|Speed limit at crash|num|
 |Sum_BICY_1|Nbr bicyclists killed in crashes in TAZ, 2011-2013|num|

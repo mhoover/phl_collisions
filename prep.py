@@ -11,7 +11,6 @@ import pickle as pkl
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from featurizer import make_binary_unk
 
 # directory structure
 dir = os.getcwd()
@@ -31,12 +30,4 @@ vehicle = pd.read_csv(dir + '/data/phl_collisions_vehicle.csv', sep=None,
                       engine='python')
 
 # clean data
-crash.SCH_BUS_IND = make_binary_unk(crash.SCH_BUS_IND, yesno=True)
-crash.SCH_ZONE_IND = make_binary_unk(crash.SCH_ZONE_IND, yesno=True)
-
-person.SEX = make_binary_unk(person.SEX, yesno=False)
-person.TRANSPORTED = make_binary_unk(person.TRANSPORTED, yesno=True)
-person(columns = {'SEX': 'female'}, inplace=True)
-
-road.RDWY_ORIENT = road.RDWY_ORIENT.apply(lambda x: 'U' if (pd.isnull(x) or 
-                                          x=='B') else x)
+person.TRANSPORTED = make_binary(person.TRANSPORTED)
