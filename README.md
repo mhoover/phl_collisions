@@ -1,11 +1,12 @@
 # README
 ## Status
-**Work in progress**
+*Work in progress*
 
 ## Introduction
 1. These data are made available by the City of Philadelphia's Mayor's Office of Transportation and Utilities
 2. They are available at https://www.opendataphilly.org/dataset/vehicular-crash-data
-3. These data contain crash data for the years 2011 through 2014, provided by Pennsylvania Department of Transportation
+3. Due to irregularities in accessing the data from the web, I have included the data as part of the repository in the `data` folder.
+4. These data contain crash data for the years 2011 through 2014, provided by Pennsylvania Department of Transportation
 
 ## Codebook
 The following codebook is adapted from the [City of Philadelphia's Mayor's Office of Transportation and Utilities](http://metadata.phila.gov/#home/datasetdetails/5543865420583086178c4eba/).

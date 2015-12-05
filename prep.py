@@ -36,7 +36,7 @@ crash.SCH_ZONE_IND = make_binary_unk(crash.SCH_ZONE_IND, yesno=True)
 
 person.SEX = make_binary_unk(person.SEX, yesno=False)
 person.TRANSPORTED = make_binary_unk(person.TRANSPORTED, yesno=True)
-person(columns = {'SEX': 'female'}, inplace=True)
+person.rename(columns = {'SEX': 'female'}, inplace=True)
 
 road.RDWY_ORIENT = road.RDWY_ORIENT.apply(lambda x: 'U' if (pd.isnull(x) or 
                                           x=='B') else x)
